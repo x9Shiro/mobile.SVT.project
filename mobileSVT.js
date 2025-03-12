@@ -12,3 +12,8 @@ function toggleMenu(x,y) {
     var buttons=y.getElementsByClassName("bt");
     for (var i=0;i<buttons.length;i++) {buttons[i].disabled = y.style.opacity == 0;}
 }
+window.addEventListener('load', function() {
+    var menu = document.querySelector('.menu');
+    var height = menu.offsetHeight;
+    menu.style.width = height + 'px';
+});
